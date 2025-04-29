@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="600" height="300" xmlns="http://www.w3.org/2000/svg">
+  <!-- 배경 -->
+  <rect width="600" height="300" fill="white" />
+  
+  <!-- 연결선 -->
+  <!-- 수직 연결선 - 위 -->
+  <line x1="300" y1="40" x2="300" y2="70" stroke="#9CA3AF" stroke-width="4" />
+  <line x1="300" y1="110" x2="300" y2="150" stroke="#9CA3AF" stroke-width="4" />
+  
+  <!-- 수평 연결선 - 아래로 확장 -->
+  <line x1="150" y1="195" x2="450" y2="195" stroke="#9CA3AF" stroke-width="3" />
+  
+  <!-- 수직 연결선 - 아래 -->
+  <line x1="150" y1="195" x2="150" y2="225" stroke="#9CA3AF" stroke-width="3" />
+  <line x1="450" y1="195" x2="450" y2="225" stroke="#9CA3AF" stroke-width="3" />
+  <line x1="300" y1="180" x2="300" y2="195" stroke="#9CA3AF" stroke-width="3" />
+  
+  <!-- 박스들 -->
+  <!-- 시장 -->
+  <rect x="200" y="10" width="200" height="30" rx="5" fill="#1D4ED8" />
+  <text x="300" y="30" fill="white" text-anchor="middle" font-weight="bold" dominant-baseline="middle" font-family="Arial, sans-serif">포천시장</text>
+  
+  <!-- 드론산업 육성 정책협의회 -->
+  <rect x="160" y="70" width="280" height="40" rx="5" fill="#2563EB" />
+  <text x="300" y="90" fill="white" text-anchor="middle" font-weight="bold" dominant-baseline="middle" font-family="Arial, sans-serif">드론산업 육성 정책협의회</text>
+  
+  <!-- 드론산업육성팀 -->
+  <rect x="200" y="150" width="200" height="30" rx="5" fill="#3B82F6" />
+  <text x="300" y="170" fill="white" text-anchor="middle" font-weight="bold" dominant-baseline="middle" font-family="Arial, sans-serif">드론산업육성팀</text>
+  
+  <!-- 민관협력체계 -->
+  <rect x="50" y="225" width="200" height="30" rx="5" fill="#10B981" />
+  <text x="150" y="245" fill="white" text-anchor="middle" font-weight="bold" dominant-baseline="middle" font-family="Arial, sans-serif">민관협력체계</text>
+  
+  <!-- 관련부서협의체 -->
+  <rect x="350" y="225" width="200" height="30" rx="5" fill="#F59E0B" />
+  <text x="450" y="245" fill="white" text-anchor="middle" font-weight="bold" dominant-baseline="middle" font-family="Arial, sans-serif">관련부서협의체</text>
+</svg>
