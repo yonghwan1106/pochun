@@ -1,0 +1,743 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>경쟁 분석 - 포천 드론 밸리 제안서</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="css/styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body class="bg-gray-50">
+    <!-- 상단 네비게이션 바 -->
+    <nav class="bg-blue-800 text-white shadow-md sticky top-0 z-50">
+        <div class="container mx-auto px-4">
+            <div class="flex justify-between items-center py-3">
+                <div class="text-xl font-bold"><a href="index.html">포천 드론 밸리</a></div>
+                <div class="hidden md:block">
+                    <ul class="flex space-x-6">
+                        <li><a href="index.html" class="hover:text-blue-200 py-2">개요</a></li>
+                        <li><a href="current-status.html" class="hover:text-blue-200 py-2">현황 및 문제점</a></li>
+                        <li><a href="improvement-plan.html" class="hover:text-blue-200 py-2">개선방안</a></li>
+                        <li><a href="expected-effects.html" class="hover:text-blue-200 py-2">기대효과</a></li>
+                        <li><a href="action-required.html" class="hover:text-blue-200 py-2">조치사항</a></li>
+                        <li><a href="data-policy.html" class="hover:text-blue-200 py-2">데이터 기반 정책</a></li>
+                        <li><a href="differentiation.html" class="hover:text-blue-200 py-2 border-b-2 border-blue-300">경쟁 분석</a></li>
+                    </ul>
+                </div>
+                <div class="md:hidden">
+                    <button id="menu-toggle" class="focus:outline-none">
+                        <i class="fas fa-bars"></i>
+                    </button>
+                </div>
+            </div>
+        </div>
+        <!-- 모바일 메뉴 -->
+        <div id="mobile-menu" class="hidden md:hidden">
+            <div class="container mx-auto px-4 py-3">
+                <ul class="space-y-2">
+                    <li><a href="index.html" class="block hover:bg-blue-700 px-3 py-2 rounded">개요</a></li>
+                    <li><a href="current-status.html" class="block hover:bg-blue-700 px-3 py-2 rounded">현황 및 문제점</a></li>
+                    <li><a href="improvement-plan.html" class="block hover:bg-blue-700 px-3 py-2 rounded">개선방안</a></li>
+                    <li><a href="expected-effects.html" class="block hover:bg-blue-700 px-3 py-2 rounded">기대효과</a></li>
+                    <li><a href="action-required.html" class="block hover:bg-blue-700 px-3 py-2 rounded">조치사항</a></li>
+                    <li><a href="data-policy.html" class="block hover:bg-blue-700 px-3 py-2 rounded">데이터 기반 정책</a></li>
+                    <li><a href="differentiation.html" class="block hover:bg-blue-700 px-3 py-2 rounded">경쟁 분석</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <!-- 헤더 섹션 -->
+    <header class="bg-gradient-to-r from-blue-600 to-blue-800 text-white py-12 px-4">
+        <div class="container mx-auto">
+            <h1 class="text-4xl font-bold mb-4">국내외 드론산업 육성 사례와 포천시 차별화 전략</h1>
+            <p class="text-xl">경쟁 도시와의 비교 분석을 통한 포천시만의 차별화된 전략</p>
+        </div>
+    </header>
+
+    <!-- 목차 섹션 -->
+    <main class="container mx-auto py-12 px-4">
+        <section class="mb-12 bg-white p-6 rounded-lg shadow-md">
+            <h2 class="text-2xl font-bold mb-4 text-gray-800">목차</h2>
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-4">
+                <div>
+                    <ul class="space-y-2">
+                        <li>
+                            <a href="#intro" class="text-blue-600 hover:text-blue-800 flex items-center">
+                                <span class="mr-2">1.</span> 서론: 국내외 드론산업 현황 및 주요 사례 개요
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#domestic" class="text-blue-600 hover:text-blue-800 flex items-center">
+                                <span class="mr-2">2.</span> 국내 주요 드론산업 육성 도시 분석
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#overseas" class="text-blue-600 hover:text-blue-800 flex items-center">
+                                <span class="mr-2">3.</span> 해외 주요 드론산업 도시 사례
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+                <div>
+                    <ul class="space-y-2">
+                        <li>
+                            <a href="#analysis" class="text-blue-600 hover:text-blue-800 flex items-center">
+                                <span class="mr-2">4.</span> 포천시 드론산업 경쟁력 분석
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#strategy" class="text-blue-600 hover:text-blue-800 flex items-center">
+                                <span class="mr-2">5.</span> 포천시 드론산업 차별화 전략 제안
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#conclusion" class="text-blue-600 hover:text-blue-800 flex items-center">
+                                <span class="mr-2">6.</span> 결론 및 기대효과
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </section>
+
+        <!-- 1. 서론 섹션 -->
+        <section id="intro" class="mb-16">
+            <h2 class="text-3xl font-bold mb-6 text-gray-800 border-b-2 border-blue-300 pb-2">1. 서론: 국내외 드론산업 현황 및 주요 사례 개요</h2>
+            
+            <div class="bg-white p-6 rounded-lg shadow-md mb-8">
+                <div class="flex items-center mb-4">
+                    <div class="rounded-full bg-blue-100 p-3 mr-4">
+                        <i class="fas fa-chart-line text-blue-600 text-xl"></i>
+                    </div>
+                    <h3 class="text-xl font-bold text-gray-800">드론산업의 글로벌 성장세와 중요성</h3>
+                </div>
+                <p class="text-gray-700 mb-6">
+                    드론 산업은 전 세계적으로 연평균 16.8%의 높은 성장세를 보이며, 2025년 1조 3,000억 원, 2030년까지는 약 53조 원 규모로 성장할 것으로 전망됩니다. 공공안전, 농업, 물류, 측량, 콘텐츠 등 다양한 분야로 활용 범위가 확대되고 있으며, 4차 산업혁명 시대의 핵심 성장 동력으로 주목받고 있습니다.
+                </p>
+
+                <div class="flex items-center mb-4">
+                    <div class="rounded-full bg-blue-100 p-3 mr-4">
+                        <i class="fas fa-landmark text-blue-600 text-xl"></i>
+                    </div>
+                    <h3 class="text-xl font-bold text-gray-800">국내 드론산업 정책 방향 및 지원 현황</h3>
+                </div>
+                <p class="text-gray-700 mb-6">
+                    정부는 '드론산업발전 기본계획'을 통해 2030년까지 드론 선도국가 진입을 목표로 다양한 지원 정책을 추진하고 있습니다. 특히 항공안전기술원을 중심으로 '드론 실증도시 구축사업'을 추진하여 전국 각지에 드론 테스트 및 실증 인프라를 구축하고 있으며, 규제 샌드박스, R&D 지원, 실증사업 등 다양한 정책적 지원이 이루어지고 있습니다.
+                </p>
+
+                <div class="flex items-center mb-4">
+                    <div class="rounded-full bg-blue-100 p-3 mr-4">
+                        <i class="fas fa-city text-blue-600 text-xl"></i>
+                    </div>
+                    <h3 class="text-xl font-bold text-gray-800">지자체별 드론산업 육성 경쟁 현황</h3>
+                </div>
+                <p class="text-gray-700 mb-6">
+                    국내에서는 화성, 고양, 영월, 보은, 울산 등 여러 지자체가 드론산업 육성에 적극적으로 나서고 있습니다. 각 지역은 지역 특성에 맞는 차별화된 드론산업 생태계 구축을 위해 노력하고 있으며, 비행 인프라 구축, 기업 지원, 인력 양성, 규제 완화 등 다양한 지원 정책을 추진하고 있습니다.
+                </p>
+
+                <div class="flex items-center mb-4">
+                    <div class="rounded-full bg-blue-100 p-3 mr-4">
+                        <i class="fas fa-map-marked-alt text-blue-600 text-xl"></i>
+                    </div>
+                    <h3 class="text-xl font-bold text-gray-800">포천시 드론산업 육성의 필요성 및 의의</h3>
+                </div>
+                <p class="text-gray-700">
+                    포천시는 2020년 「포천시 드론산업 육성 및 지원에 관한 조례」를 제정하여 드론산업 육성을 위한 제도적 기반을 마련하였으며, '포천 세계 드론 제전' 개최 준비 등 드론 산업 육성에 대한 의지를 보이고 있습니다. 현재 포천시는 인구 감소와 청년 유출, 지역 특화 산업 부재 등의 문제에 직면해 있어, 드론산업 육성을 통한 지역경제 활성화 및 신성장 동력 확보가 절실한 상황입니다.
+                </p>
+            </div>
+        </section>
+
+        <!-- 2. 국내 주요 드론산업 육성 도시 분석 섹션 -->
+        <section id="domestic" class="mb-16">
+            <h2 class="text-3xl font-bold mb-6 text-gray-800 border-b-2 border-blue-300 pb-2">2. 국내 주요 드론산업 육성 도시 분석</h2>
+            
+            <div class="bg-white p-6 rounded-lg shadow-md mb-8">
+                <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
+                    <div class="bg-blue-50 p-5 rounded-lg">
+                        <div class="flex items-center mb-4">
+                            <div class="rounded-full bg-blue-100 p-3 mr-3">
+                                <i class="fas fa-plane text-blue-600 text-xl"></i>
+                            </div>
+                            <h3 class="text-xl font-bold text-gray-800">화성시: 테스트 인프라 중심 전략</h3>
+                        </div>
+                        <p class="text-gray-700 mb-4">
+                            화성시는 2017년 6월 국내 최초로 「화성시 무인비행장치 산업의 육성 및 지원에 관한 조례」를 제정하여 드론산업 육성의 선도적 위치를 확보했습니다. 2019년에는 국토교통부 항공안전기술원이 드론 전용 비행시험장 대상지로 화성시를 단독 선정하면서, 경기도 드론 전용비행시험장이 화성 송산면에 조성되었습니다.
+                        </p>
+                        <div class="bg-white p-3 rounded-md">
+                            <h4 class="font-bold text-gray-800 mb-2">주요 특징 및 전략</h4>
+                            <ul class="list-disc pl-5 text-gray-700 space-y-1">
+                                <li>테스트 및 검증 기능 중심의 인프라 구축</li>
+                                <li>산업단지와 연계한 드론 기업 유치</li>
+                                <li>국토교통부 항공안전기술원과의 협력을 통한 규제 완화</li>
+                            </ul>
+                        </div>
+                    </div>
+                    
+                    <div class="bg-blue-50 p-5 rounded-lg">
+                        <div class="flex items-center mb-4">
+                            <div class="rounded-full bg-blue-100 p-3 mr-3">
+                                <i class="fas fa-building text-blue-600 text-xl"></i>
+                            </div>
+                            <h3 class="text-xl font-bold text-gray-800">고양시: 실내비행장 및 앵커센터 중심 전략</h3>
+                        </div>
+                        <p class="text-gray-700 mb-4">
+                            고양시는 2023년 2월 화전동에 '고양드론앵커센터(고윙스)'를 조성하여 드론산업 육성에 본격적으로 나서고 있습니다. 국내 최대 규모의 실내비행장(1,864.52㎡)을 중심으로 기업입주시설, R&D센터, 운용성평가 센터, 관제시스템 등이 마련되어 있으며, 경기북부 최대 규모의 드론 앵커시설로 자리매김하고 있습니다.
+                        </p>
+                        <div class="bg-white p-3 rounded-md">
+                            <h4 class="font-bold text-gray-800 mb-2">주요 특징 및 전략</h4>
+                            <ul class="list-disc pl-5 text-gray-700 space-y-1">
+                                <li>실내비행장 중심의 테스트 인프라 제공</li>
+                                <li>입주기업 지원 및 R&D 센터 운영</li>
+                                <li>교육, 관제, 산업, 연구, 실증 체계 통합 운영</li>
+                                <li>대덕드론비행장을 통한 실외 비행 테스트 공간 제공</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="grid grid-cols-1 md:grid-cols-2 gap-8 mt-8">
+                    <div class="bg-blue-50 p-5 rounded-lg">
+                        <div class="flex items-center mb-4">
+                            <div class="rounded-full bg-blue-100 p-3 mr-3">
+                                <i class="fas fa-mountain text-blue-600 text-xl"></i>
+                            </div>
+                            <h3 class="text-xl font-bold text-gray-800">영월: 원거리 비가시권 비행 특화 전략</h3>
+                        </div>
+                        <p class="text-gray-700 mb-4">
+                            강원도 영월은 원거리 비가시권 비행에 특화된 비행시험 환경을 제공하는 것이 특징입니다. 직경 11km, 고도 450m의 넓은 원형 공역을 활용하여 시근거리 및 비가시권 비행시험이 가능하며, 비행 조건에 따른 정지추력시험도 수행할 수 있습니다.
+                        </p>
+                        <div class="bg-white p-3 rounded-md">
+                            <h4 class="font-bold text-gray-800 mb-2">주요 특징 및 전략</h4>
+                            <ul class="list-disc pl-5 text-gray-700 space-y-1">
+                                <li>넓은 공역을 활용한 비가시권 비행 특화</li>
+                                <li>장거리 드론 비행 테스트에 최적화된 환경</li>
+                                <li>정지추력시험 등 특수 테스트 가능</li>
+                            </ul>
+                        </div>
+                    </div>
+                    
+                    <div class="bg-blue-50 p-5 rounded-lg">
+                        <div class="flex items-center mb-4">
+                            <div class="rounded-full bg-blue-100 p-3 mr-3">
+                                <i class="fas fa-industry text-blue-600 text-xl"></i>
+                            </div>
+                            <h3 class="text-xl font-bold text-gray-800">울산: 연구 중심 접근과 비행구역 문제</h3>
+                        </div>
+                        <p class="text-gray-700 mb-4">
+                            울산은 드론 연구 선도도시를 표방하고 있으나, 지역 대부분이 관제권에 포함되어 비행가능 구역이 제한적인 문제에 직면해 있습니다. 울주군 삼동·두서면과 동구 대왕암, 태화강 일부구간, 울주군 선바위 등 일부 지역에서만 드론 비행이 가능한 상황입니다. 최근 국토교통부는 울산광역시 울주군 삼동면 하잠리 일원에 8번째 드론 전용 비행구역을 신설하여 문제 해결에 나섰습니다.
+                        </p>
+                        <div class="bg-white p-3 rounded-md">
+                            <h4 class="font-bold text-gray-800 mb-2">주요 특징 및 전략</h4>
+                            <ul class="list-disc pl-5 text-gray-700 space-y-1">
+                                <li>연구 중심의 드론산업 접근</li>
+                                <li>비행구역 제한 문제와 규제 완화 노력</li>
+                                <li>최근 드론 전용 비행구역 신설을 통한 인프라 확충</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="mt-8 bg-blue-50 p-5 rounded-lg">
+                    <div class="flex items-center mb-4">
+                        <div class="rounded-full bg-blue-100 p-3 mr-3">
+                            <i class="fas fa-ellipsis-h text-blue-600 text-xl"></i>
+                        </div>
+                        <h3 class="text-xl font-bold text-gray-800">기타 지역: 부천, 보은 등</h3>
+                    </div>
+                    <p class="text-gray-700">
+                        부천시는 물류 중심의 드론 활용에 초점을 맞추고 있으나, 구체적인 전략이나 인프라 구축 사례는 파악되지 않았습니다. 충북 보은 역시 드론 테스트 베드를 운영하고 있으나 구체적인 특화 전략은 확인하기 어려웠습니다.
+                    </p>
+                </div>
+            </div>
+        </section>
+
+        <!-- 3. 해외 주요 드론산업 도시 사례 섹션 -->
+        <section id="overseas" class="mb-16">
+            <h2 class="text-3xl font-bold mb-6 text-gray-800 border-b-2 border-blue-300 pb-2">3. 해외 주요 드론산업 도시 사례</h2>
+            
+            <div class="bg-white p-6 rounded-lg shadow-md mb-8">
+                <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
+                    <div class="bg-indigo-50 p-5 rounded-lg">
+                        <div class="flex items-center mb-4">
+                            <div class="rounded-full bg-indigo-100 p-3 mr-3">
+                                <i class="fas fa-industry text-indigo-600 text-xl"></i>
+                            </div>
+                            <h3 class="text-xl font-bold text-gray-800">중국 심천(선전): 제조업 기반 생태계</h3>
+                        </div>
+                        <p class="text-gray-700 mb-4">
+                            중국 심천은 세계 1위 드론기업인 DJI의 본사가 위치한 글로벌 드론산업의 중심지입니다. 중국은 현재 세계 드론 시장의 95%를 점유하고 있으며, DJI가 90%, Autel이 5%의 시장을 차지하고 있습니다. 심천은 중국의 실리콘밸리로 불리며, 2003년부터 '통용 항공 비행 관제 조례'를 제정하고 드론 산업 육성에 적극적으로 나섰습니다.
+                        </p>
+                        <div class="bg-white p-3 rounded-md">
+                            <h4 class="font-bold text-gray-800 mb-2">주요 특징 및 전략</h4>
+                            <ul class="list-disc pl-5 text-gray-700 space-y-1">
+                                <li>제조 인프라가 잘 갖추어진 환경 활용</li>
+                                <li>중국 정부의 대대적 지원 정책</li>
+                                <li>DJI 중심의 드론 생태계 형성</li>
+                                <li>소비자 드론, 산업용 드론 제조 중심</li>
+                            </ul>
+                        </div>
+                    </div>
+                    
+                    <div class="bg-indigo-50 p-5 rounded-lg">
+                        <div class="flex items-center mb-4">
+                            <div class="rounded-full bg-indigo-100 p-3 mr-3">
+                                <i class="fas fa-microchip text-indigo-600 text-xl"></i>
+                            </div>
+                            <h3 class="text-xl font-bold text-gray-800">미국 사례: 기술개발 중심 접근</h3>
+                        </div>
+                        <p class="text-gray-700 mb-4">
+                            미국은 실리콘밸리, 샌디에고 등을 중심으로 드론 기술 개발에 집중하고 있습니다. 특히 첨단 소프트웨어, AI, 자율비행 기술 등에서 경쟁력을 갖추고 있으며, 중국과의 기술 경쟁 속에서 자국 드론 산업 보호 및 육성에 나서고 있습니다. 그러나 구체적인 도시별 전략에 대한 정보는 제한적입니다.
+                        </p>
+                        <div class="bg-white p-3 rounded-md">
+                            <h4 class="font-bold text-gray-800 mb-2">주요 특징 및 전략</h4>
+                            <ul class="list-disc pl-5 text-gray-700 space-y-1">
+                                <li>첨단 소프트웨어, AI 기술 중심 접근</li>
+                                <li>자율비행 알고리즘 등 핵심 기술 개발</li>
+                                <li>군사용 드론 기술의 민간 활용 추진</li>
+                                <li>자국 드론 산업 보호를 위한 규제 마련</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- 4. 포천시 드론산업 경쟁력 분석 섹션 -->
+        <section id="analysis" class="mb-16">
+            <h2 class="text-3xl font-bold mb-6 text-gray-800 border-b-2 border-blue-300 pb-2">4. 포천시 드론산업 경쟁력 분석</h2>
+            
+            <div class="bg-white p-6 rounded-lg shadow-md mb-8">
+                <div class="flex items-center mb-6">
+                    <div class="rounded-full bg-green-100 p-3 mr-4">
+                        <i class="fas fa-chart-pie text-green-600 text-xl"></i>
+                    </div>
+                    <h3 class="text-xl font-bold text-gray-800">SWOT 분석</h3>
+                </div>
+                
+                <div class="grid grid-cols-1 md:grid-cols-2 gap-6 mb-8">
+                    <div class="bg-green-50 p-5 rounded-lg">
+                        <h4 class="font-bold text-gray-800 mb-3">강점(Strengths)</h4>
+                        <ul class="list-disc pl-5 text-gray-700 space-y-2">
+                            <li><span class="font-medium">다양한 자연환경:</span> 한탄강 유역, 넓은 개활지, 산악지형 등 드론 테스트에 적합한 다양한 환경 보유</li>
+                            <li><span class="font-medium">군사도시 특수성:</span> 다수의 군부대, 예비군 훈련장, 사격장 등 군사시설 활용 가능성</li>
+                            <li><span class="font-medium">수도권 접근성:</span> 서울 및 수도권과 1시간 내외 거리로 기업, 연구기관, 전문인력 접근 용이</li>
+                            <li><span class="font-medium">제도적 기반:</span> 2020년 「포천시 드론산업 육성 및 지원에 관한 조례」 제정</li>
+                        </ul>
+                    </div>
+                    
+                    <div class="bg-red-50 p-5 rounded-lg">
+                        <h4 class="font-bold text-gray-800 mb-3">약점(Weaknesses)</h4>
+                        <ul class="list-disc pl-5 text-gray-700 space-y-2">
+                            <li><span class="font-medium">전문인력 부족:</span> 드론 관련 전문인력 및 교육 시스템 미비</li>
+                            <li><span class="font-medium">인프라 부족:</span> 드론 전용 비행장, 테스트베드 등 전문 인프라 부족</li>
+                            <li><span class="font-medium">기업 생태계 미비:</span> 드론 관련 기업 및 연구기관 미비</li>
+                            <li><span class="font-medium">규제 환경:</span> 군사시설 보호구역 등으로 인한 비행 제한 가능성</li>
+                        </ul>
+                    </div>
+                </div>
+                
+                <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
+                    <div class="bg-blue-50 p-5 rounded-lg">
+                        <h4 class="font-bold text-gray-800 mb-3">기회(Opportunities)</h4>
+                        <ul class="list-disc pl-5 text-gray-700 space-y-2">
+                            <li><span class="font-medium">드론 시장 성장:</span> 국내외 드론 시장의 빠른 성장세</li>
+                            <li><span class="font-medium">정부 정책 지원:</span> 드론산업 육성을 위한 정부의 적극적 지원 정책</li>
+                            <li><span class="font-medium">군사 드론 기술 발전:</span> 군사용 드론 기술의 민간 활용 가능성 확대</li>
+                            <li><span class="font-medium">산업 다각화 필요성:</span> 포천시의 지역경제 활성화 및 신성장 동력 발굴 필요성</li>
+                        </ul>
+                    </div>
+                    
+                    <div class="bg-yellow-50 p-5 rounded-lg">
+                        <h4 class="font-bold text-gray-800 mb-3">위협(Threats)</h4>
+                        <ul class="list-disc pl-5 text-gray-700 space-y-2">
+                            <li><span class="font-medium">타 지역 경쟁:</span> 화성, 고양 등 경기도 내 타 지자체와의 경쟁</li>
+                            <li><span class="font-medium">규제 장벽:</span> 비행 규제, 군사시설 규제 등 제도적 장벽</li>
+                            <li><span class="font-medium">기술 격차:</span> 중국, 미국 등 글로벌 선도국과의 기술 격차</li>
+                            <li><span class="font-medium">자원 제약:</span> 예산, 인력 등 자원의 제약</li>
+                        </ul>
+                    </div>
+                </div>
+                
+                <div class="mt-10">
+                    <div class="flex items-center mb-4">
+                        <div class="rounded-full bg-teal-100 p-3 mr-4">
+                            <i class="fas fa-thumbs-up text-teal-600 text-xl"></i>
+                        </div>
+                        <h3 class="text-xl font-bold text-gray-800">핵심 차별화 요소</h3>
+                    </div>
+                    <p class="text-gray-700 mb-4">
+                        포천시가 다른 드론산업 육성 도시들과 차별화될 수 있는 핵심 요소는 다음과 같습니다:
+                    </p>
+                    <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
+                        <div class="bg-teal-50 p-4 rounded-lg">
+                            <h4 class="font-bold text-gray-800 mb-2">
+                                <i class="fas fa-shield-alt text-teal-600 mr-2"></i>
+                                군사도시 특성
+                            </h4>
+                            <p class="text-gray-700">
+                                다수의 군부대, 군사시설, 군 전문인력 등 타 도시가 보유하지 못한 독특한 자원 보유로, 군-민간 협력 모델 구축 가능
+                            </p>
+                        </div>
+                        <div class="bg-teal-50 p-4 rounded-lg">
+                            <h4 class="font-bold text-gray-800 mb-2">
+                                <i class="fas fa-mountain text-teal-600 mr-2"></i>
+                                다양한 자연환경
+                            </h4>
+                            <p class="text-gray-700">
+                                산악지형, 한탄강 유역, 개활지, 농경지 등 다양한 환경에서의 드론 테스트 가능한 복합 테스트베드 환경 제공
+                            </p>
+                        </div>
+                        <div class="bg-teal-50 p-4 rounded-lg">
+                            <h4 class="font-bold text-gray-800 mb-2">
+                                <i class="fas fa-car text-teal-600 mr-2"></i>
+                                수도권 접근성
+                            </h4>
+                            <p class="text-gray-700">
+                                서울 및 수도권과의 근접성으로 인력, 기업, 연구기관 유치에 유리하며 서울-포천 드론 회랑 구축 잠재력
+                            </p>
+                        </div>
+                        <div class="bg-teal-50 p-4 rounded-lg">
+                            <h4 class="font-bold text-gray-800 mb-2">
+                                <i class="fas fa-water text-teal-600 mr-2"></i>
+                                한탄강 지질공원 연계 가능성
+                            </h4>
+                            <p class="text-gray-700">
+                                세계적인 가치를 지닌 지질공원과 드론 기술의 융합으로 특화된 관광 콘텐츠 및 연구 프로그램 개발 가능
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- 5. 포천시 드론산업 차별화 전략 제안 섹션 -->
+        <section id="strategy" class="mb-16">
+            <h2 class="text-3xl font-bold mb-6 text-gray-800 border-b-2 border-blue-300 pb-2">5. 포천시 드론산업 차별화 전략 제안</h2>
+            
+            <div class="bg-white p-6 rounded-lg shadow-md mb-8">
+                <div class="grid grid-cols-1 lg:grid-cols-2 gap-8 mb-8">
+                    <div class="bg-purple-50 p-5 rounded-lg">
+                        <div class="flex items-center mb-4">
+                            <div class="rounded-full bg-purple-100 p-3 mr-3">
+                                <i class="fas fa-handshake text-purple-600 text-xl"></i>
+                            </div>
+                            <h3 class="text-xl font-bold text-gray-800">군-민간 협력 기반 차별화 전략</h3>
+                        </div>
+                        <p class="text-gray-700 mb-4">
+                            포천시의 가장 큰 경쟁 우위 요소인 '군사도시 특성'을 최대한 활용한 차별화 전략입니다.
+                        </p>
+                        <div class="space-y-4">
+                            <div>
+                                <h4 class="font-bold text-gray-800 mb-1">① 군 훈련장 공동활용 모델 개발</h4>
+                                <ul class="list-disc pl-5 text-gray-700 space-y-1">
+                                    <li>예비군 훈련이 없는 시간대의 훈련장을 드론 비행공간으로 활용</li>
+                                    <li>군-민간 공동 드론 비행장 운영 체계 구축</li>
+                                    <li>군 훈련 일정과 연계한 드론 비행 일정 관리 시스템 개발</li>
+                                </ul>
+                            </div>
+                            <div>
+                                <h4 class="font-bold text-gray-800 mb-1">② 군사보안구역 내 특별비행승인 간소화 체계</h4>
+                                <ul class="list-disc pl-5 text-gray-700 space-y-1">
+                                    <li>군부대와의 협의를 통한 특별비행승인 간소화 프로세스 구축</li>
+                                    <li>국방부-국토교통부-포천시 간 드론 비행 협의체 구성</li>
+                                    <li>군사보안구역 내 드론 비행 안전관리 체계 마련</li>
+                                </ul>
+                            </div>
+                            <div>
+                                <h4 class="font-bold text-gray-800 mb-1">③ 국방-민간 드론 기술 융합 클러스터 구축</h4>
+                                <ul class="list-disc pl-5 text-gray-700 space-y-1">
+                                    <li>군사용 드론 기술의 민간 활용 및 이전 촉진 프로그램</li>
+                                    <li>군-민간 드론 기술 교류 플랫폼 구축</li>
+                                    <li>국방 드론 기술의 상용화 지원 센터 운영</li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="bg-purple-50 p-5 rounded-lg">
+                        <div class="flex items-center mb-4">
+                            <div class="rounded-full bg-purple-100 p-3 mr-3">
+                                <i class="fas fa-flask text-purple-600 text-xl"></i>
+                            </div>
+                            <h3 class="text-xl font-bold text-gray-800">다중 환경 테스트베드 구축 전략</h3>
+                        </div>
+                        <p class="text-gray-700 mb-4">
+                            포천시의 다양한 자연환경을 활용한 차별화된 테스트 인프라를 구축하는 전략입니다.
+                        </p>
+                        <div class="space-y-4">
+                            <div>
+                                <h4 class="font-bold text-gray-800 mb-1">① 산악-평야-수계 연계 다중환경 테스트베드 조성</h4>
+                                <ul class="list-disc pl-5 text-gray-700 space-y-1">
+                                    <li>한탄강 유역, 산악지형, 개활지 등을 연계한 통합 테스트베드 구축</li>
+                                    <li>환경별 드론 성능 테스트 코스 개발</li>
+                                    <li>다양한 고도, 지형, 기후 조건에서의 테스트 환경 제공</li>
+                                </ul>
+                            </div>
+                            <div>
+                                <h4 class="font-bold text-gray-800 mb-1">② 환경별 드론 성능 검증 시스템 구축</h4>
+                                <ul class="list-disc pl-5 text-gray-700 space-y-1">
+                                    <li>산악지형 드론 성능 검증 시스템</li>
+                                    <li>수계환경 드론 성능 검증 시스템</li>
+                                    <li>농경지 드론 성능 검증 시스템</li>
+                                    <li>도심형 드론 성능 검증 시스템</li>
+                                </ul>
+                            </div>
+                            <div>
+                                <h4 class="font-bold text-gray-800 mb-1">③ 실내비행장-실외비행장-원거리비행장 통합 운영 체계</h4>
+                                <ul class="list-disc pl-5 text-gray-700 space-y-1">
+                                    <li>다양한 비행 환경을 단계적으로 테스트할 수 있는 원스톱 시스템</li>
+                                    <li>비행 데이터 통합 관리 및 분석 플랫폼 구축</li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="grid grid-cols-1 lg:grid-cols-2 gap-8">
+                    <div class="bg-purple-50 p-5 rounded-lg">
+                        <div class="flex items-center mb-4">
+                            <div class="rounded-full bg-purple-100 p-3 mr-3">
+                                <i class="fas fa-road text-purple-600 text-xl"></i>
+                            </div>
+                            <h3 class="text-xl font-bold text-gray-800">서울-포천 드론 회랑 구축 전략</h3>
+                        </div>
+                        <p class="text-gray-700 mb-4">
+                            포천시의 수도권 접근성 강점을 활용한 차별화 전략입니다.
+                        </p>
+                        <div class="space-y-4">
+                            <div>
+                                <h4 class="font-bold text-gray-800 mb-1">① 서울-포천 드론 물류 배송 경로 구축</h4>
+                                <ul class="list-disc pl-5 text-gray-700 space-y-1">
+                                    <li>서울 외곽과 포천을 연결하는 드론 전용 물류 배송 회랑 구축</li>
+                                    <li>수도권 물류기업과 연계한 드론 배송 실증 사업 추진</li>
+                                </ul>
+                            </div>
+                            <div>
+                                <h4 class="font-bold text-gray-800 mb-1">② 수도권 IT 기업들의 드론 테스트베드로 포지셔닝</h4>
+                                <ul class="list-disc pl-5 text-gray-700 space-y-1">
+                                    <li>판교, 마곡 등 수도권 IT기업들의 테스트베드로 육성</li>
+                                    <li>IT 기업 대상 드론 테스트 패키지 프로그램 개발</li>
+                                </ul>
+                            </div>
+                            <div>
+                                <h4 class="font-bold text-gray-800 mb-1">③ 주말 워케이션과 연계한 드론 기업 유치 프로그램</h4>
+                                <ul class="list-disc pl-5 text-gray-700 space-y-1">
+                                    <li>주말 워케이션과 드론 테스트를 병행할 수 있는 프로그램</li>
+                                    <li>관광자원과 연계한 드론 체험-워케이션 패키지</li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="bg-purple-50 p-5 rounded-lg">
+                        <div class="flex items-center mb-4">
+                            <div class="rounded-full bg-purple-100 p-3 mr-3">
+                                <i class="fas fa-user-graduate text-purple-600 text-xl"></i>
+                            </div>
+                            <h3 class="text-xl font-bold text-gray-800">군 인력 활용 특화 교육 전략</h3>
+                        </div>
+                        <p class="text-gray-700 mb-4">
+                            포천시의 '군사도시 특성'에서 파생되는 인적 자원을 활용한 차별화 전략입니다.
+                        </p>
+                        <div class="space-y-4">
+                            <div>
+                                <h4 class="font-bold text-gray-800 mb-1">① 군 드론 전문인력의 민간 전환 교육 프로그램</h4>
+                                <ul class="list-disc pl-5 text-gray-700 space-y-1">
+                                    <li>군에서 드론 관련 업무를 수행한 전문인력 대상 민간 전환 교육</li>
+                                    <li>군사용 드론 기술의 민간 적용 교육 과정</li>
+                                </ul>
+                            </div>
+                            <div>
+                                <h4 class="font-bold text-gray-800 mb-1">② 전역 예정자 대상 드론 산업 취업 연계 시스템</h4>
+                                <ul class="list-disc pl-5 text-gray-700 space-y-1">
+                                    <li>전역 예정 장병 대상 드론 산업 취업 준비 교육</li>
+                                    <li>드론 자격증 취득 지원 및 취업 연계</li>
+                                </ul>
+                            </div>
+                            <div>
+                                <h4 class="font-bold text-gray-800 mb-1">③ 군-민간 드론 기술 공유 워크숍 및 경진대회</h4>
+                                <ul class="list-disc pl-5 text-gray-700 space-y-1">
+                                    <li>군과 민간의 드론 전문가들이 참여하는 기술 공유 워크숍</li>
+                                    <li>군-민간 합동 드론 경진대회 개최</li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- 특화 서비스 개발 전략 -->
+                <div class="mt-8 bg-purple-50 p-5 rounded-lg">
+                    <div class="flex items-center mb-4">
+                        <div class="rounded-full bg-purple-100 p-3 mr-3">
+                            <i class="fas fa-cogs text-purple-600 text-xl"></i>
+                        </div>
+                        <h3 class="text-xl font-bold text-gray-800">특화 서비스 개발 전략</h3>
+                    </div>
+                    <p class="text-gray-700 mb-4">
+                        포천시의 강점을 활용한 특화 드론 서비스 개발 전략입니다.
+                    </p>
+                    <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
+                        <div>
+                            <h4 class="font-bold text-gray-800 mb-1">
+                                <i class="fas fa-tractor text-purple-600 mr-2"></i>
+                                ① 농업 특화 드론 서비스
+                            </h4>
+                            <ul class="list-disc pl-5 text-gray-700 space-y-1">
+                                <li>포천 농산물 재배 특화 드론 서비스 개발</li>
+                                <li>드론을 활용한 정밀 농업 시스템 구축</li>
+                                <li>농약 살포, 파종, 작물 모니터링 등 통합 서비스</li>
+                            </ul>
+                        </div>
+                        <div>
+                            <h4 class="font-bold text-gray-800 mb-1">
+                                <i class="fas fa-camera text-purple-600 mr-2"></i>
+                                ② 관광 특화 드론 서비스
+                            </h4>
+                            <ul class="list-disc pl-5 text-gray-700 space-y-1">
+                                <li>한탄강 지질공원 드론 투어 프로그램 개발</li>
+                                <li>AR/VR 기술과 드론을 결합한 관광 콘텐츠</li>
+                                <li>드론 촬영 명소 지정 및 콘텐츠 마케팅</li>
+                            </ul>
+                        </div>
+                        <div>
+                            <h4 class="font-bold text-gray-800 mb-1">
+                                <i class="fas fa-shield-alt text-purple-600 mr-2"></i>
+                                ③ 안전 특화 드론 서비스
+                            </h4>
+                            <ul class="list-disc pl-5 text-gray-700 space-y-1">
+                                <li>산불 감시, 실종자 수색, 재난 대응 드론 시스템</li>
+                                <li>군-민간 협력 재난 대응 드론 시스템 개발</li>
+                                <li>포천시 안전 관리를 위한 통합 드론 관제 시스템</li>
+                            </ul>
+                        </div>
+                        <div>
+                            <h4 class="font-bold text-gray-800 mb-1">
+                                <i class="fas fa-lock text-purple-600 mr-2"></i>
+                                ④ 군사-민간 융합 드론 서비스
+                            </h4>
+                            <ul class="list-disc pl-5 text-gray-700 space-y-1">
+                                <li>경계 감시, 순찰 등 군사 기술 기반 민간 보안 서비스</li>
+                                <li>군 작전 지원 및 민간 응용 하이브리드 드론 개발</li>
+                                <li>국방 분야 드론 기술의 민간 안전 서비스 적용</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- 6. 결론 및 기대효과 섹션 -->
+        <section id="conclusion" class="mb-16">
+            <h2 class="text-3xl font-bold mb-6 text-gray-800 border-b-2 border-blue-300 pb-2">6. 결론 및 기대효과</h2>
+            
+            <div class="bg-white p-6 rounded-lg shadow-md">
+                <div class="flex items-center mb-4">
+                    <div class="rounded-full bg-blue-100 p-3 mr-4">
+                        <i class="fas fa-star text-blue-600 text-xl"></i>
+                    </div>
+                    <h3 class="text-xl font-bold text-gray-800">포천시 드론산업 육성의 차별화된 접근 요약</h3>
+                </div>
+                <p class="text-gray-700 mb-6">
+                    포천시는 '군사도시 특성', '다양한 자연환경', '수도권 접근성'이라는 세 가지 핵심 강점을 결합한 독자적인 드론산업 생태계를 구축할 수 있는 잠재력을 가지고 있습니다. 특히 다른 도시들이 쉽게 모방할 수 없는 '군-민간 협력 모델'을 중심으로 차별화된 드론산업 육성 전략을 추진한다면, 국내 드론산업의 독특한 생태계를 형성할 수 있을 것입니다.
+                </p>
+
+                <div class="flex items-center mb-4">
+                    <div class="rounded-full bg-green-100 p-3 mr-4">
+                        <i class="fas fa-trophy text-green-600 text-xl"></i>
+                    </div>
+                    <h3 class="text-xl font-bold text-gray-800">타 지역과의 차별화를 통한 경쟁력 확보 가능성</h3>
+                </div>
+                <ul class="list-disc pl-8 text-gray-700 space-y-2 mb-6">
+                    <li>화성시의 테스트 인프라 중심 전략, 고양시의 실내비행장 중심 전략, 영월의 비가시권 비행 특화 전략과는 차별화된 '다중 환경-군사 협력' 모델 구축 가능</li>
+                    <li>중국 심천의 제조업 중심, 미국의 기술개발 중심 접근과는 달리 '실제 운용 환경에서의 테스트 및 검증' 특화 가능</li>
+                    <li>'군사-민간 기술 융합'을 통한 독자적 영역 개척 가능</li>
+                </ul>
+
+                <!-- 기대효과 요약 -->
+                <div class="bg-gradient-to-r from-blue-50 to-purple-50 p-5 rounded-lg">
+                    <div class="flex items-center mb-4">
+                        <div class="rounded-full bg-purple-100 p-3 mr-3">
+                            <i class="fas fa-rocket text-purple-600 text-xl"></i>
+                        </div>
+                        <h3 class="text-xl font-bold text-gray-800">기대효과 요약</h3>
+                    </div>
+                    <div class="grid grid-cols-1 md:grid-cols-3 gap-4">
+                        <div class="bg-white p-4 rounded-md shadow-sm">
+                            <h4 class="font-bold text-gray-800 mb-2">
+                                <i class="fas fa-coins text-yellow-500 mr-2"></i>
+                                경제적 효과
+                            </h4>
+                            <ul class="list-disc pl-5 text-gray-700 space-y-1">
+                                <li>드론 관련 기업 70개 이상 유치 및 육성</li>
+                                <li>드론 관련 신규 일자리 1,000개 이상 창출</li>
+                                <li>연간 800억원 이상의 관련 산업 매출 창출</li>
+                                <li>지역 총생산(GRDP) 내 첨단산업 비중 증가</li>
+                            </ul>
+                        </div>
+                        <div class="bg-white p-4 rounded-md shadow-sm">
+                            <h4 class="font-bold text-gray-800 mb-2">
+                                <i class="fas fa-users text-blue-500 mr-2"></i>
+                                사회적 효과
+                            </h4>
+                            <ul class="list-disc pl-5 text-gray-700 space-y-1">
+                                <li>청년 인구 유입 및 정착 촉진</li>
+                                <li>군 전역 인력의 민간 전환 및 지역 정착 유도</li>
+                                <li>드론 기반 공공서비스 혁신</li>
+                                <li>지역 공동체 활성화 및 주민 참여 확대</li>
+                            </ul>
+                        </div>
+                        <div class="bg-white p-4 rounded-md shadow-sm">
+                            <h4 class="font-bold text-gray-800 mb-2">
+                                <i class="fas fa-microchip text-green-500 mr-2"></i>
+                                기술적 효과
+                            </h4>
+                            <ul class="list-disc pl-5 text-gray-700 space-y-1">
+                                <li>군사-민간 드론 기술 융합을 통한 혁신</li>
+                                <li>다양한 환경에서의 드론 운용 기술 발전</li>
+                                <li>드론 관련 지식재산권 창출</li>
+                                <li>드론 기반 새로운 서비스 모델 개발</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- 페이지 이동 내비게이션 -->
+        <section class="mb-12 bg-gray-100 p-6 rounded-lg">
+            <div class="flex flex-col md:flex-row justify-between items-center">
+                <a href="action-required.html" class="bg-white py-2 px-4 rounded-lg shadow hover:shadow-md transition mb-4 md:mb-0 flex items-center text-gray-700">
+                    <i class="fas fa-arrow-left mr-2"></i>
+                    <span>조치사항</span>
+                </a>
+                 <a href="index.html" class="bg-blue-600 text-white py-2 px-4 rounded-lg shadow hover:shadow-md transition flex items-center">
+                    <span>개요로 돌아가기</span>
+                    <i class="fas fa-home ml-2"></i>
+                </a>
+            </div>
+        </section>
+    </main>
+
+    <!-- 푸터 섹션 -->
+    <footer class="bg-gray-800 text-white py-8 px-4">
+        <div class="container mx-auto">
+            <div class="flex flex-col md:flex-row justify-between items-center">
+                <div class="mb-4 md:mb-0">
+                    <h3 class="text-xl font-bold mb-2">포천 드론 밸리 제안서</h3>
+                    <p class="text-gray-400">
+                        지역경제 활성화를 위한 미래 비전
+                    </p>
+                </div>
+                <div class="text-center md:text-right">
+                    <p class="text-gray-400 mb-2">2025 포천시 소통하는 정책 제안 공모전 © 작성자: 박용환 (sanoramyun8@gmail.com)</p>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script src="js/main.js"></script>
+</body>
+</html>
+}
