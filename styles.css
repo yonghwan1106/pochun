@@ -1,0 +1,113 @@
+/* 포천 드론 밸리 제안서 커스텀 스타일 */
+
+/* 폰트 최적화 */
+body {
+    font-family: 'Noto Sans KR', 'Apple SD Gothic Neo', 'Malgun Gothic', sans-serif;
+    line-height: 1.6;
+}
+
+/* 부드러운 스크롤 효과 */
+html {
+    scroll-behavior: smooth;
+}
+
+/* 강조 텍스트 */
+.highlight {
+    background: linear-gradient(180deg, rgba(255,255,255,0) 50%, rgba(59, 130, 246, 0.2) 50%);
+    display: inline;
+}
+
+/* 인용문 스타일 */
+blockquote {
+    border-left: 4px solid #3b82f6;
+    padding-left: 1rem;
+    font-style: italic;
+    margin: 1.5rem 0;
+    color: #4b5563;
+}
+
+/* 섹션 구분선 */
+.section-divider {
+    height: 3px;
+    background: linear-gradient(to right, #3b82f6, transparent);
+    margin: 2rem 0;
+}
+
+/* 카드 호버 효과 */
+.hover-card {
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.hover-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 10px 25px -5px rgba(0, 0, 0, 0.1), 0 10px 10px -5px rgba(0, 0, 0, 0.04);
+}
+
+/* 드론 애니메이션 (예시) */
+@keyframes flyDrone {
+    0% {
+        transform: translate(0, 0) rotate(0deg);
+    }
+    25% {
+        transform: translate(5px, -5px) rotate(2deg);
+    }
+    50% {
+        transform: translate(0, -10px) rotate(0deg);
+    }
+    75% {
+        transform: translate(-5px, -5px) rotate(-2deg);
+    }
+    100% {
+        transform: translate(0, 0) rotate(0deg);
+    }
+}
+
+.drone-animation {
+    animation: flyDrone 6s ease-in-out infinite;
+}
+
+/* 테이블 스타일 */
+.data-table {
+    width: 100%;
+    border-collapse: collapse;
+    margin: 1.5rem 0;
+}
+
+.data-table th {
+    background-color: #e5e7eb;
+    font-weight: bold;
+    text-align: left;
+    padding: 0.75rem;
+}
+
+.data-table td {
+    padding: 0.75rem;
+    border-bottom: 1px solid #e5e7eb;
+}
+
+.data-table tr:hover {
+    background-color: #f9fafb;
+}
+
+/* 프린트 스타일 최적화 */
+@media print {
+    nav, footer, .no-print {
+        display: none;
+    }
+    
+    body {
+        padding: 2rem;
+    }
+
+    h1 {
+        font-size: 24pt;
+    }
+
+    h2 {
+        font-size: 18pt;
+    }
+
+    p, li {
+        font-size: 11pt;
+    }
+}
