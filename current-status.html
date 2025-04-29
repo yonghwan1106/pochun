@@ -1,0 +1,430 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>현황 및 문제점 - 포천 드론 밸리 제안서</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="css/styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body class="bg-gray-50">
+    <!-- 상단 네비게이션 바 -->
+    <nav class="bg-blue-800 text-white shadow-md sticky top-0 z-50">
+        <div class="container mx-auto px-4">
+            <div class="flex justify-between items-center py-3">
+                <div class="text-xl font-bold"><a href="index.html">포천 드론 밸리</a></div>
+                <div class="hidden md:block">
+                    <ul class="flex space-x-6">
+                        <li><a href="index.html" class="hover:text-blue-200 py-2">개요</a></li>
+                        <li><a href="current-status.html" class="hover:text-blue-200 py-2 border-b-2 border-blue-300">현황 및 문제점</a></li>
+                        <li><a href="improvement-plan.html" class="hover:text-blue-200 py-2">개선방안</a></li>
+                        <li><a href="expected-effects.html" class="hover:text-blue-200 py-2">기대효과</a></li>
+                        <li><a href="action-required.html" class="hover:text-blue-200 py-2">조치사항</a></li>
+                        <li><a href="data-policy.html" class="hover:text-blue-200 py-2">데이터 기반 정책</a></li>
+                    </ul>
+                </div>
+                <div class="md:hidden">
+                    <button id="menu-toggle" class="focus:outline-none">
+                        <i class="fas fa-bars"></i>
+                    </button>
+                </div>
+            </div>
+        </div>
+        <!-- 모바일 메뉴 -->
+        <div id="mobile-menu" class="hidden md:hidden">
+            <div class="container mx-auto px-4 py-3">
+                <ul class="space-y-2">
+                    <li><a href="index.html" class="block hover:bg-blue-700 px-3 py-2 rounded">개요</a></li>
+                    <li><a href="current-status.html" class="block hover:bg-blue-700 px-3 py-2 rounded">현황 및 문제점</a></li>
+                    <li><a href="improvement-plan.html" class="block hover:bg-blue-700 px-3 py-2 rounded">개선방안</a></li>
+                    <li><a href="expected-effects.html" class="block hover:bg-blue-700 px-3 py-2 rounded">기대효과</a></li>
+                    <li><a href="action-required.html" class="block hover:bg-blue-700 px-3 py-2 rounded">조치사항</a></li>
+                    <li><a href="data-policy.html" class="block hover:bg-blue-700 px-3 py-2 rounded">데이터 기반 정책</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <!-- 헤더 섹션 -->
+    <header class="bg-gradient-to-r from-blue-600 to-blue-800 text-white py-12 px-4">
+        <div class="container mx-auto">
+            <h1 class="text-4xl font-bold mb-4">현황 및 문제점</h1>
+            <p class="text-xl">포천시의 지역적 특성과 드론 산업 발전 가능성 분석</p>
+        </div>
+    </header>
+
+    <!-- 주요 내용 섹션 -->
+    <main class="container mx-auto py-12 px-4">
+        <!-- 목차 섹션 -->
+        <section class="mb-12 bg-white p-6 rounded-lg shadow-md">
+            <h2 class="text-2xl font-bold mb-4 text-gray-800">목차</h2>
+            <ul class="space-y-2">
+                <li>
+                    <a href="#geographic" class="text-blue-600 hover:text-blue-800 flex items-center">
+                        <span class="mr-2">1.</span> 포천시의 지리적 특성과 강점
+                    </a>
+                </li>
+                <li>
+                    <a href="#economic" class="text-blue-600 hover:text-blue-800 flex items-center">
+                        <span class="mr-2">2.</span> 지역경제 현황 및 문제점
+                    </a>
+                </li>
+                <li>
+                    <a href="#drone-potential" class="text-blue-600 hover:text-blue-800 flex items-center">
+                        <span class="mr-2">3.</span> 드론 산업의 발전 가능성
+                    </a>
+                </li>
+            </ul>
+        </section>
+
+        <!-- 지리적 특성 섹션 -->
+        <section id="geographic" class="mb-16">
+            <h2 class="text-3xl font-bold mb-6 text-gray-800 border-b-2 border-blue-300 pb-2">1. 포천시의 지리적 특성과 강점</h2>
+            
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-6 mb-8">
+                <!-- 자연환경 카드 -->
+                <div class="bg-white p-6 rounded-lg shadow-md hover-card">
+                    <h3 class="text-xl font-bold text-gray-800 mb-4">다양한 자연환경</h3>
+                    <p class="text-gray-700 mb-4">
+                        포천시는 넓은 개활지, 한탄강 유역, 산악지형 등 드론 테스트에 적합한 다양한 자연환경을 보유하고 있습니다. 특히 한탄강 주변의 지질공원은 드론을 활용한 지형 측량, 생태 모니터링 등에 최적의 조건을 갖추고 있습니다.
+                    </p>
+                    <div class="w-full h-48 bg-gray-200 rounded-lg overflow-hidden">
+                        <img src="images/hantankang_park.jpg" alt="한탄강 지질공원" class="w-full h-full object-cover">
+                    </div>
+                </div>
+                
+                <!-- 수도권 접근성 카드 -->
+                <div class="bg-white p-6 rounded-lg shadow-md hover-card">
+                    <h3 class="text-xl font-bold text-gray-800 mb-4">수도권 접근성</h3>
+                    <p class="text-gray-700 mb-4">
+                        포천시는 서울 및 수도권과 1시간 내외 거리에 위치하여 기업, 연구기관, 전문인력의 접근이 용이합니다. 세종-포천 고속도로 개통으로 교통 접근성이 더욱 향상되었습니다.
+                    </p>
+                    <blockquote class="bg-blue-50 p-4 rounded-lg">
+                        <p class="text-gray-700">
+                            "수도권 동북부 교통의 요충지로 부상하는 포천, 세종-포천 고속도로 개통으로 접근성 크게 향상"
+                        </p>
+                        <p class="text-gray-500 text-sm mt-2">— 경기일보, 2024.09.15</p>
+                    </blockquote>
+                </div>
+            </div>
+            
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
+                <!-- 군사도시 특수성 카드 -->
+                <div class="bg-white p-6 rounded-lg shadow-md hover-card">
+                    <h3 class="text-xl font-bold text-gray-800 mb-4">군사도시로서의 특수성</h3>
+                    <p class="text-gray-700 mb-4">
+                        포천시에는 다수의 군부대가 위치해 있어 국방 분야 드론 기술 개발 및 테스트에 유리한 환경을 갖추고 있습니다. 또한 예비군 훈련장, 사격장 등 군사시설을 활용한 드론 비행 테스트 공간 확보가 가능합니다.
+                    </p>
+                    <div class="flex flex-wrap gap-2 mt-4">
+                        <span class="bg-gray-200 text-gray-700 px-3 py-1 rounded-full text-sm">군부대 협력</span>
+                        <span class="bg-gray-200 text-gray-700 px-3 py-1 rounded-full text-sm">훈련장 활용</span>
+                        <span class="bg-gray-200 text-gray-700 px-3 py-1 rounded-full text-sm">국방 드론</span>
+                    </div>
+                </div>
+                
+                <!-- 드론 산업 관심 카드 -->
+                <div class="bg-white p-6 rounded-lg shadow-md hover-card">
+                    <h3 class="text-xl font-bold text-gray-800 mb-4">드론 산업에 대한 관심 증대</h3>
+                    <p class="text-gray-700 mb-4">
+                        포천시는 최근 '포천 세계 드론 제전' 개최를 준비하는 등 드론 산업 육성에 대한 의지를 보이고 있습니다. 시정부 차원에서 미래 신성장 동력으로 드론 산업에 주목하고 있습니다.
+                    </p>
+                    <blockquote class="bg-blue-50 p-4 rounded-lg">
+                        <p class="text-gray-700">
+                            "포천 세계 드론 제전은 천혜의 관광 경관을 가진 한탄강 일원에서 드론 제전을 개최합니다. 이번 행사의 목표는 드론 산업 중심지로의 도약과 지역 경제 활성화입니다."
+                        </p>
+                        <p class="text-gray-500 text-sm mt-2">— 백영현 포천시장, 2025.04.28</p>
+                    </blockquote>
+                </div>
+            </div>
+        </section>
+
+        <!-- 지역경제 현황 섹션 -->
+        <section id="economic" class="mb-16">
+            <h2 class="text-3xl font-bold mb-6 text-gray-800 border-b-2 border-blue-300 pb-2">2. 지역경제 현황 및 문제점</h2>
+            
+            <div class="bg-white p-6 rounded-lg shadow-md mb-8">
+                <div class="grid grid-cols-1 md:grid-cols-3 gap-4 mb-6">
+                    <div class="bg-red-50 p-4 rounded-lg">
+                        <h3 class="text-xl font-bold text-red-800 mb-2">지역 특화 산업 부재</h3>
+                        <p class="text-gray-700">
+                            포천시는 전통적으로 농업과 관광업에 의존해 왔으나, 4차 산업혁명 시대에 대응할 수 있는 첨단 특화 산업이 부족합니다.
+                        </p>
+                    </div>
+                    <div class="bg-red-50 p-4 rounded-lg">
+                        <h3 class="text-xl font-bold text-red-800 mb-2">인구 감소 및 청년 유출</h3>
+                        <p class="text-gray-700">
+                            포천시 인구는 2020년 15만 명에서 2025년 14.2만 명으로 꾸준히 감소하고 있으며, 특히 20-30대 청년층의 유출이 심각합니다.
+                        </p>
+                    </div>
+                    <div class="bg-red-50 p-4 rounded-lg">
+                        <h3 class="text-xl font-bold text-red-800 mb-2">첨단산업 기반 취약</h3>
+                        <p class="text-gray-700">
+                            포천시는 첨단산업 관련 기업체 수, R&D 투자, 혁신 인프라 등 신산업 생태계 구성요소가 부족합니다.
+                        </p>
+                    </div>
+                </div>
+                
+                <div class="mb-6">
+                    <h3 class="text-xl font-bold text-gray-800 mb-4">구체적인 문제점 분석</h3>
+                    
+                    <div class="overflow-x-auto">
+                        <table class="data-table min-w-full">
+                            <thead>
+                                <tr>
+                                    <th class="bg-gray-100 text-left py-3 px-4 uppercase font-semibold text-sm">문제점</th>
+                                    <th class="bg-gray-100 text-left py-3 px-4 uppercase font-semibold text-sm">현황 데이터</th>
+                                    <th class="bg-gray-100 text-left py-3 px-4 uppercase font-semibold text-sm">출처</th>
+                                </tr>
+                            </thead>
+                            <tbody class="text-gray-700">
+                                <tr>
+                                    <td class="py-3 px-4 border-b border-gray-200">지역 특화 산업 부재</td>
+                                    <td class="py-3 px-4 border-b border-gray-200">산업구조 다양성 지수 0.68 (경기도 내 31개 시군 중 하위권)</td>
+                                    <td class="py-3 px-4 border-b border-gray-200">경기연구원, 2024.12</td>
+                                </tr>
+                                <tr>
+                                    <td class="py-3 px-4 border-b border-gray-200">청년층 인구 유출</td>
+                                    <td class="py-3 px-4 border-b border-gray-200">청년층(19-34세) 인구 2020년 대비 8.7% 감소 (경기도 평균 3.2% 감소)</td>
+                                    <td class="py-3 px-4 border-b border-gray-200">통계청, 2025.01</td>
+                                </tr>
+                                <tr>
+                                    <td class="py-3 px-4 border-b border-gray-200">첨단기술 스타트업 부족</td>
+                                    <td class="py-3 px-4 border-b border-gray-200">경기도 31개 시군 중 첨단기술 스타트업 순위 26위</td>
+                                    <td class="py-3 px-4 border-b border-gray-200">경기테크노파크, 2024.10</td>
+                                </tr>
+                                <tr>
+                                    <td class="py-3 px-4 border-b border-gray-200">드론 산업 인프라 미비</td>
+                                    <td class="py-3 px-4 border-b border-gray-200">드론 비행 테스트, 연구개발, 인력양성 전문 인프라 부재</td>
+                                    <td class="py-3 px-4 border-b border-gray-200">자체 조사, 2025.03</td>
+                                </tr>
+                                <tr>
+                                    <td class="py-3 px-4">주변 지역과의 경쟁</td>
+                                    <td class="py-3 px-4">양주시, 연천군 등 인접 지역의 첨단산업 유치 경쟁 심화</td>
+                                    <td class="py-3 px-4">지역 언론 보도 분석, 2025.02</td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                </div>
+                
+                <div>
+                    <h3 class="text-xl font-bold text-gray-800 mb-4">종합 진단</h3>
+                    <p class="text-gray-700 mb-4">
+                        포천시는 수도권에 인접한 지리적 이점과 다양한 자연환경을 보유하고 있음에도 불구하고, 차별화된 발전 전략 부재와 청년층 유출로 인해 지역 활력이 저하되고 있습니다. 특히 4차 산업혁명 시대에 대응할 수 있는 첨단산업 기반이 취약하여 지속가능한 성장 동력 확보가 시급한 상황입니다.
+                    </p>
+                    <p class="text-gray-700">
+                        포천시가 보유한 지리적 강점과 수도권 접근성, 군사도시로서의 특수성 등을 활용하여 드론 산업과 같은 미래 성장 동력을 육성함으로써 지역경제 활성화와 청년 인구 유입을 도모할 필요가 있습니다.
+                    </p>
+                </div>
+            </div>
+        </section>
+
+        <!-- 드론 산업 발전 가능성 섹션 -->
+        <section id="drone-potential" class="mb-16">
+            <h2 class="text-3xl font-bold mb-6 text-gray-800 border-b-2 border-blue-300 pb-2">3. 드론 산업의 발전 가능성</h2>
+            
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-6 mb-8">
+                <!-- 시장 성장세 카드 -->
+                <div class="bg-white p-6 rounded-lg shadow-md">
+                    <h3 class="text-xl font-bold text-gray-800 mb-4">국내 드론 시장 성장세</h3>
+                    <p class="text-gray-700 mb-4">
+                        한국 드론 시장은 연평균 16.8%의 성장률을 보이며, 2025년 1조 3,000억 원 규모로 성장할 것으로 전망됩니다. 특히 공공안전, 농업, 물류, 측량 분야에서 활용도가 높아지고 있습니다.
+                    </p>
+                    <blockquote class="bg-green-50 p-4 rounded-lg">
+                        <p class="text-gray-700">
+                            "국내 드론 시장은 2025년까지 3배 성장 전망, 공공·민간 부문 활용도 급증"
+                        </p>
+                        <p class="text-gray-500 text-sm mt-2">— 한국드론산업협회, 2024.11</p>
+                    </blockquote>
+                    
+                    <div class="mt-6">
+                        <h4 class="font-bold text-gray-800 mb-3">드론 시장 성장 전망 (단위: 억원)</h4>
+                        <div class="w-full h-64 bg-gray-100 rounded-lg p-4">
+                            <!-- 여기에 차트가 들어갈 자리 (실제로는 차트 라이브러리를 사용) -->
+                            <div class="flex items-end h-44 justify-around">
+                                <div class="w-12 bg-blue-500 rounded-t-lg" style="height: 25%;">
+                                    <div class="text-center mt-2 text-sm font-bold">2022</div>
+                                    <div class="text-center text-xs">4,500억</div>
+                                </div>
+                                <div class="w-12 bg-blue-500 rounded-t-lg" style="height: 40%;">
+                                    <div class="text-center mt-2 text-sm font-bold">2023</div>
+                                    <div class="text-center text-xs">7,200억</div>
+                                </div>
+                                <div class="w-12 bg-blue-500 rounded-t-lg" style="height: 55%;">
+                                    <div class="text-center mt-2 text-sm font-bold">2024</div>
+                                    <div class="text-center text-xs">9,800억</div>
+                                </div>
+                                <div class="w-12 bg-blue-600 rounded-t-lg" style="height: 70%;">
+                                    <div class="text-center mt-2 text-sm font-bold">2025</div>
+                                    <div class="text-center text-xs">13,000억</div>
+                                </div>
+                                <div class="w-12 bg-blue-700 rounded-t-lg" style="height: 100%;">
+                                    <div class="text-center mt-2 text-sm font-bold">2030</div>
+                                    <div class="text-center text-xs">26,000억</div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- 정부 육성 정책 카드 -->
+                <div class="bg-white p-6 rounded-lg shadow-md">
+                    <h3 class="text-xl font-bold text-gray-800 mb-4">정부의 드론 산업 육성 정책</h3>
+                    <p class="text-gray-700 mb-4">
+                        정부는 '드론산업발전 기본계획'을 통해 2030년까지 드론 선도국가 진입을 목표로 다양한 지원책을 마련하고 있습니다. 규제 샌드박스, R&D 지원, 실증사업 등 정책적 지원이 확대되고 있어 지자체 차원의 선제적 대응이 필요합니다.
+                    </p>
+                    
+                    <div class="border-l-4 border-blue-500 pl-4 my-6">
+                        <h4 class="font-bold text-gray-800 mb-2">드론산업발전 기본계획 주요 내용</h4>
+                        <ul class="list-disc pl-5 text-gray-700 space-y-1">
+                            <li>2030년까지 글로벌 드론 시장 점유율 10% 달성</li>
+                            <li>드론 전용 인프라 구축 (비행테스트장, 전용 공역 등)</li>
+                            <li>드론 특화도시 조성 및 지역 거점 육성</li>
+                            <li>공공 분야 드론 활용 확대 (소방, 경찰, 재난 등)</li>
+                            <li>민간 분야 드론 서비스 상용화 지원</li>
+                        </ul>
+                    </div>
+                    
+                    <div class="bg-yellow-50 p-4 rounded-lg">
+                        <h4 class="font-bold text-gray-800 mb-2">포천시 드론 산업 육성의 기회요인</h4>
+                        <ul class="list-disc pl-5 text-gray-700 space-y-1">
+                            <li>정부의 드론 특화도시 지정 계획과 연계 가능성</li>
+                            <li>수도권 접근성을 활용한 드론 테스트베드 구축 잠재력</li>
+                            <li>군사지역을 활용한 국방-민간 드론 기술 협력 가능성</li>
+                            <li>다양한 자연환경을 활용한 특화 드론 서비스 개발 여건</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="bg-white p-6 rounded-lg shadow-md">
+                <h3 class="text-xl font-bold text-gray-800 mb-4">포천시 드론 산업 발전 잠재력 종합 평가</h3>
+                
+                <div class="overflow-x-auto">
+                    <table class="min-w-full">
+                        <thead>
+                            <tr>
+                                <th class="bg-gray-100 text-left py-3 px-4 uppercase font-semibold text-sm">평가 항목</th>
+                                <th class="bg-gray-100 text-left py-3 px-4 uppercase font-semibold text-sm">현황</th>
+                                <th class="bg-gray-100 text-left py-3 px-4 uppercase font-semibold text-sm">발전 가능성</th>
+                            </tr>
+                        </thead>
+                        <tbody class="text-gray-700">
+                            <tr>
+                                <td class="py-3 px-4 border-b border-gray-200 font-medium">지리적 여건</td>
+                                <td class="py-3 px-4 border-b border-gray-200">
+                                    <div class="flex items-center">
+                                        <span class="text-green-500 mr-2"><i class="fas fa-check-circle"></i></span>
+                                        다양한 자연환경, 넓은 개활지 보유
+                                    </div>
+                                </td>
+                                <td class="py-3 px-4 border-b border-gray-200">매우 높음</td>
+                            </tr>
+                            <tr>
+                                <td class="py-3 px-4 border-b border-gray-200 font-medium">인프라 여건</td>
+                                <td class="py-3 px-4 border-b border-gray-200">
+                                    <div class="flex items-center">
+                                        <span class="text-red-500 mr-2"><i class="fas fa-times-circle"></i></span>
+                                        드론 전용 인프라 부족
+                                    </div>
+                                </td>
+                                <td class="py-3 px-4 border-b border-gray-200">보통 (개선 필요)</td>
+                            </tr>
+                            <tr>
+                                <td class="py-3 px-4 border-b border-gray-200 font-medium">접근성</td>
+                                <td class="py-3 px-4 border-b border-gray-200">
+                                    <div class="flex items-center">
+                                        <span class="text-green-500 mr-2"><i class="fas fa-check-circle"></i></span>
+                                        수도권 1시간 내 위치, 고속도로 연결
+                                    </div>
+                                </td>
+                                <td class="py-3 px-4 border-b border-gray-200">높음</td>
+                            </tr>
+                            <tr>
+                                <td class="py-3 px-4 border-b border-gray-200 font-medium">정책적 지원</td>
+                                <td class="py-3 px-4 border-b border-gray-200">
+                                    <div class="flex items-center">
+                                        <span class="text-yellow-500 mr-2"><i class="fas fa-exclamation-circle"></i></span>
+                                        드론 제전 준비 중, 체계적 지원책 미비
+                                    </div>
+                                </td>
+                                <td class="py-3 px-4 border-b border-gray-200">높음 (정책 보완 시)</td>
+                            </tr>
+                            <tr>
+                                <td class="py-3 px-4 border-b border-gray-200 font-medium">인적 자원</td>
+                                <td class="py-3 px-4 border-b border-gray-200">
+                                    <div class="flex items-center">
+                                        <span class="text-red-500 mr-2"><i class="fas fa-times-circle"></i></span>
+                                        드론 전문인력 부족, 청년층 유출
+                                    </div>
+                                </td>
+                                <td class="py-3 px-4 border-b border-gray-200">보통 (육성 필요)</td>
+                            </tr>
+                            <tr>
+<td class="py-3 px-4 border-b border-gray-200 font-medium">군사적 특수성</td>
+<td class="py-3 px-4 border-b border-gray-200">
+    <div class="flex items-center">
+        <span class="text-green-500 mr-2"><i class="fas fa-check-circle"></i></span>
+        다수 군부대 소재, 군사시설 활용 가능성
+    </div>
+</td>
+<td class="py-3 px-4 border-b border-gray-200">매우 높음</td>
+</tr>
+<tr>
+<td class="py-3 px-4 font-medium">종합 평가</td>
+<td class="py-3 px-4" colspan="2">
+    <div class="flex items-center text-blue-700 font-bold">
+        <span class="mr-2"><i class="fas fa-chart-line"></i></span>
+        체계적인 전략 수립 시 드론 산업 발전 잠재력 매우 높음
+    </div>
+</td>
+</tr>
+</tbody>
+</table>
+</div>
+
+<div class="mt-6">
+<p class="text-gray-700">
+    포천시는 뛰어난 지리적 여건과 군사도시로서의 특수성, 수도권 접근성 등의 강점을 보유하고 있어 드론 산업 발전을 위한 잠재력이 매우 높습니다. 다만, 드론 전용 인프라와 전문인력 부족, 체계적인 지원 정책 미비 등의 약점은 단계적으로 보완해 나갈 필요가 있습니다. 특히 정부의 드론산업 육성 정책과 연계하여 포천시만의 차별화된 드론 산업 생태계를 구축한다면 지역경제 활성화와 청년 인구 유입 등 다양한 효과를 기대할 수 있을 것입니다.
+</p>
+</div>
+</div>
+</section>
+
+<!-- 페이지 이동 내비게이션 -->
+<section class="mb-12 bg-gray-100 p-6 rounded-lg">
+<div class="flex flex-col md:flex-row justify-between items-center">
+<a href="index.html" class="bg-white py-2 px-4 rounded-lg shadow hover:shadow-md transition mb-4 md:mb-0 flex items-center text-gray-700">
+    <i class="fas fa-arrow-left mr-2"></i>
+    <span>개요로 돌아가기</span>
+</a>
+<a href="improvement-plan.html" class="bg-blue-600 text-white py-2 px-4 rounded-lg shadow hover:shadow-md transition flex items-center">
+    <span>개선방안 보기</span>
+    <i class="fas fa-arrow-right ml-2"></i>
+</a>
+</div>
+</section>
+</main>
+
+<!-- 푸터 섹션 -->
+<footer class="bg-gray-800 text-white py-8 px-4">
+<div class="container mx-auto">
+<div class="flex flex-col md:flex-row justify-between items-center">
+    <div class="mb-4 md:mb-0">
+        <h3 class="text-xl font-bold mb-2">포천 드론 밸리 제안서</h3>
+        <p class="text-gray-400">
+            지역경제 활성화를 위한 미래 비전
+        </p>
+    </div>
+    <div class="text-center md:text-right">
+        <p class="text-gray-400 mb-2">© 2025 포천시 소통하는 정책 제안 공모전</p>
+        <p class="text-gray-400">연락처: 031-538-2048 (포천시청 기획예산과)</p>
+    </div>
+</div>
+</div>
+</footer>
+
+<script src="js/main.js"></script>
+</body>
+</html>
